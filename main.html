@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <title>Weather Today</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <input type="text" id="cityName" placeholder="Search City" />
+        <button type="submit" id="sender">
+          <span class="material-icons">search</span>
+        </button>
+      </div>
+
+      <section class="weather-info" style="display: none">
+        <div class="weatherBox">
+          <div class="location">
+            <span class="material-icons-outlined">location_on</span>
+            <h1 id="city">tehran</h1>
+          </div>
+          <p id="currentdate">wed, 07 aug</p>
+        </div>
+
+        <div class="imgtem">
+          <img class="weatherimg" src="assets/weather/rain.svg" />
+          <div class="tempweather">
+            <h2 class="temp">35 °C</h2>
+            <h4 class="weathercondition"></h4>
+          </div>
+        </div>
+
+        <div class="details">
+          <div class="hum">
+            <span class="material-icons">water_drop</span>
+            <div class="humdetails">
+              <p>Humidity</p>
+              <p id="Humidity"></p>
+            </div>
+          </div>
+          <div class="wind">
+            <span class="material-icons">air</span>
+            <div class="winddetails">
+              <p>Wind Speed</p>
+              <p id="windSpeed"></p>
+            </div>
+          </div>
+        </div>
+
+        <section class="forecast">
+          <div id="forecastcontainer">
+            <p class="temp-forecast"></p>
+            <img class="forecast-img" src="assets/weather/clear.svg" />
+            <p class="date-forecast"></p>
+          </div>
+          <div id="forecastcontainer">
+            <p class="temp-forecast"></p>
+            <img class="forecast-img" src="assets/weather/clear.svg" />
+            <p class="date-forecast"></p>
+          </div>
+          <div id="forecastcontainer">
+            <p class="temp-forecast"></p>
+            <img class="forecast-img" src="assets/weather/clear.svg" />
+            <p class="date-forecast"></p>
+          </div>
+          <div id="forecastcontainer">
+            <p class="temp-forecast"></p>
+            <img class="forecast-img" src="assets/weather/clear.svg" />
+            <p class="date-forecast"></p>
+          </div>
+          <div id="forecastcontainer">
+            <p class="temp-forecast"></p>
+            <img class="forecast-img" src="assets/weather/clear.svg" />
+            <p class="date-forecast"></p>
+          </div>
+        </section>
+      </section>
+
+      <section class="firstMessage">
+        <img
+          class="search-city-img"
+          src="assets/message/search-city.png"
+          alt="Search City"
+        />
+        <div class="search-city-message">
+          <h1>Search city</h1>
+          <h4>Find out condition of your location</h4>
+        </div>
+      </section>
+
+      <section class="notFound" style="display: none">
+        <img
+          class="notFound-img"
+          src="assets/message/not-found.png"
+          alt="Not Found"
+        />
+        <div class="notFound-message">
+          <h1>City not found</h1>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

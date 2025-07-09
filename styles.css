@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  background: url("assets/background/Largest-radio-telescopes-in-the-world-1.jpg");
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(5px);
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 300px;
+  height: 469px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.15),
+    rgb(255, 255, 255, 0.15)
+  );
+  border-radius: 12px;
+  backdrop-filter: blur(100px);
+  padding: 25px;
+}
+#cityName {
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 16px;
+  border: 3px solid transparent;
+  padding-right: 45px;
+  outline: none;
+  background: rgb(0, 0, 0, 0.15);
+  transition: 0.25s border;
+  margin-bottom: 25px;
+}
+#cityName:focus {
+  border: 3px solid rgb(0, 0, 0, 0.15);
+}
+#cityName::placeholder {
+  font-weight: 600;
+  color: rgb(255, 255, 255, 0.75);
+}
+.header i {
+  font-size: 30px;
+}
+.header button {
+  position: absolute;
+  top: 36px;
+  right: 40px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.weatherBox {
+  /* border: solid; */
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 10px;
+}
+.location {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.tempweather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.imgtem {
+  /* border: solid; */
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+.search-city-img {
+  height: 180px;
+  width: fit-content;
+}
+.firstMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.search-city-message {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 25px;
+}
+.search-city-message h4{
+  text-align: center;
+}
+.notFound-img {
+  height: 180px;
+  width: fit-content;
+  margin-top: 25px;
+}
+.notFound-message {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.notFound {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.wind {
+  gap: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.forecast {
+  position: absolute;
+  bottom: 15px;
+  padding: 15px 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 250px;
+  overflow: scroll;
+  gap: 8px;
+  overflow-y: hidden;
+  
+  
+}
+
+.forecast::-webkit-scrollbar {
+  height: 9px;
+}
+.forecast::-webkit-scrollbar-track {
+  background: rgba(239, 11, 11, 0.1);
+  border-radius: 99px;
+}
+.forecast::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0, 0.15);
+  border-radius: 99px;
+}
+#forecastcontainer {
+  background: rgb(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 10px 5px;
+  min-width: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s background;
+}
+#forecastcontainer:hover {
+  background: rgb(255, 255, 255, 0.15);
+}
+#forecastcontainer img {
+  height: 35px;
+  width: 35px;
+}
