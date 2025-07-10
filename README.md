@@ -49,7 +49,3 @@ git clone https://github.com/mahdinap/weather-app.git
 cd weather-app
 
 
-## 🖼️ Screenshot
-
-![Weather App Screenshot](./screenshot.png)
-
