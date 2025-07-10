@@ -47,4 +47,9 @@ This is a practice project created as part of my learning journey in frontend de
 ```bash
 git clone https://github.com/mahdinap/weather-app.git
 cd weather-app
-<img width="495" height="583" alt="screenshot" src="https://github.com/user-attachments/assets/0565d970-b432-4b53-8ad5-8d67b8ce42a0" />
+
+
+## 🖼️ Screenshot
+
+![Weather App Screenshot](./screenshot.png)
+
