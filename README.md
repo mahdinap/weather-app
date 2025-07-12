@@ -39,6 +39,8 @@ This is a practice project created as part of my learning journey in frontend de
 🔗 [Live Demo Here](https://subtle-belekoy-9a354e.netlify.app/)
 
 ---
+![App Screenshot](./screenshot.png)
+
 
 ## 📁 Installation
 
@@ -47,6 +49,3 @@ This is a practice project created as part of my learning journey in frontend de
 ```bash
 git clone https://github.com/mahdinap/weather-app.git
 cd weather-app
-
-![App Screenshot](./screenshot.png)
-
