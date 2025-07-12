@@ -48,4 +48,5 @@ This is a practice project created as part of my learning journey in frontend de
 git clone https://github.com/mahdinap/weather-app.git
 cd weather-app
 
+![App Screenshot](./screenshot.png)
 
